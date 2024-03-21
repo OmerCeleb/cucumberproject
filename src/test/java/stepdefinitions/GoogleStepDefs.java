@@ -11,7 +11,7 @@ public class GoogleStepDefs {
 
     Google_HomePage googleHomePage = new Google_HomePage(); // Create object from Google_HomePage
 
-    @Given("user is on google homepage")
+    @Given("user is on the google homepage")
     public void user_is_on_google_homepage() {
         Driver.getDriver().get("https://www.google.com/");
         WaitUtils.waitFor(2);
@@ -33,5 +33,25 @@ public class GoogleStepDefs {
     public void close_the_application() {
         Driver.closeDriver();
     }
+
+
+    @Given("user search for porcelain teapot")
+    public void user_search_for_porcelain_teapot() {
+        googleHomePage.searchBox.sendKeys("Porcelain Teapot", Keys.ENTER);
+    }
+
+    @Then("verify the result contains porcelain teapot")
+    public void verify_the_result_contains_porcelain_teapot() {
+        Assert.assertTrue(Driver.getDriver().getTitle().contains("Porcelain Teapot"));
+
+    }
+
+    @Given("user search bmw")
+    public void user_search_bmw() {
+        googleHomePage.searchBox.sendKeys("BMW" , Keys.ENTER);
+    }
+
+
+
 
 }

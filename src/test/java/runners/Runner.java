@@ -7,7 +7,9 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "./src/test/resources/features/day22_first_feature_file.feature",// provides path of the features folder
-        glue = "stepdefinitions"
+        glue = "stepdefinitions",
+        dryRun = true, // dryRun = true generates the missing step definitions, without running the existing step definitions
+        tags = "@bmw"
 )
 public class Runner {
 
@@ -23,5 +25,8 @@ public class Runner {
     @CucumberOptions is used to connect the feature files with their step definitions. It is also used fot configurations and report plugins
     features => provides path of the features folder
     glue => is used to connect feature file with it step definitions
+    dryRun = true generates the missing step definitions, without running the existing step definitions
+    dryRun = false must be used to run the tests normally
+    @tags us used to run specific test scenarios
 
  */
