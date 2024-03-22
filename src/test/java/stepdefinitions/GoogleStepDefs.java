@@ -15,7 +15,19 @@ public class GoogleStepDefs {
     public void user_is_on_google_homepage() {
         Driver.getDriver().get("https://www.google.com/");
         WaitUtils.waitFor(2);
+
+        // if there is a Google cookie popup
+        try {
+            googleHomePage.cookiePopUp.click();
+        }catch (Exception e){
+
+        }
+
     }
+
+
+
+
 
     @Given("user search for iPhone")
     public void user_search_for_i_phone() {

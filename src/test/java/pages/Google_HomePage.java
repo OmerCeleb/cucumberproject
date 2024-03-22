@@ -14,4 +14,7 @@ public class Google_HomePage {
     @FindBy(name = "q")
     public WebElement searchBox;
 
+    @FindBy(xpath = "//*[@id=\"L2AGLb\"]/div")
+    public WebElement cookiePopUp;
+
 }
