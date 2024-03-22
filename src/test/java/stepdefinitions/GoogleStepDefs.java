@@ -41,10 +41,6 @@ public class GoogleStepDefs {
         WaitUtils.waitFor(2);
     }
 
-    @Then("close the application")
-    public void close_the_application() {
-        Driver.closeDriver();
-    }
 
 
     @Given("user search for porcelain teapot")
@@ -61,6 +57,11 @@ public class GoogleStepDefs {
     @Given("user search bmw")
     public void user_search_bmw() {
         googleHomePage.searchBox.sendKeys("BMW" , Keys.ENTER);
+    }
+
+    @Given("user search for {string} on google")
+    public void user_search_for_on_google(String string) {
+        googleHomePage.searchBox.sendKeys("iPhone", Keys.ENTER);
     }
 
 
