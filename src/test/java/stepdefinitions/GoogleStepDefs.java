@@ -13,7 +13,7 @@ public class GoogleStepDefs {
 
     @Given("user is on the google homepage")
     public void user_is_on_google_homepage() {
-        Driver.getDriver().get("https://www.google.com/");
+        Driver.getDriver().get("https://www.google.se/");
         WaitUtils.waitFor(2);
 
         // if there is a Google cookie popup
@@ -52,11 +52,6 @@ public class GoogleStepDefs {
     public void verify_the_result_contains_porcelain_teapot() {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("Porcelain Teapot"));
 
-    }
-
-    @Given("user search bmw")
-    public void user_search_bmw() {
-        googleHomePage.searchBox.sendKeys("BMW" , Keys.ENTER);
     }
 
     @Given("user search for {string} on google")
