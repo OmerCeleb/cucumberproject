@@ -32,7 +32,7 @@ public class GoogleStepDefs {
     @Given("user search for iPhone")
     public void user_search_for_i_phone() {
         googleHomePage.searchBox.sendKeys("iPhone", Keys.ENTER);
-        WaitUtils.waitFor(2);
+        WaitUtils.waitFor(3);
     }
 
     @Then("verify the result contains iPhone")
@@ -56,7 +56,7 @@ public class GoogleStepDefs {
 
     @Given("user search for {string} on google")
     public void user_search_for_on_google(String string) {
-        googleHomePage.searchBox.sendKeys("iPhone", Keys.ENTER);
+        googleHomePage.searchBox.sendKeys(string, Keys.ENTER);
     }
 
 
