@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "./src/test/resources/features",// provides path of the features folder
         glue = "stepdefinitions",
-        dryRun = false, // dryRun = true generates the missing step definitions, without running the existing step definitions
-        tags = "@param_feature"
+        dryRun = true, // dryRun = true generates the missing step definitions, without running the existing step definitions
+        tags = "@scenario_outline"
 )
 public class Runner {
 
