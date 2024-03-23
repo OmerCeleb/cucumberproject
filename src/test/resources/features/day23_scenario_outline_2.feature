@@ -19,5 +19,9 @@ Feature: data_tables_feature
     And close the application
 
     Examples:
-      | first_name |  | last_name |  | position |  | office |  | extension |  | start_date |  | salary |
-      | Ali        |  | Can       |  | QA       |  | NY     |  | 546       |  | 2023-12-22 |  | 50000  |
+      | first_name |  | last_name |  | position |  | office   |  | extension |  | start_date |  | salary |
+      | Ayse       |  | Can       |  | QA       |  | NY       |  | 546       |  | 2023-12-22 |  | 50000  |
+      | Fatma      |  | Can       |  | Dev      |  | Istanbul |  | 546       |  | 2023-12-22 |  | 50000  |
+      | Mike       |  | Kine      |  | QA       |  | TXT      |  | 546       |  | 2023-12-22 |  | 50000  |
+      | Chris      |  | Love      |  | QA       |  | NY       |  | 546       |  | 2023-12-22 |  | 50000  |
+      | Ali        |  | Can       |  | QA       |  | NY       |  | 546       |  | 2023-12-22 |  | 50000  |

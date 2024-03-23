@@ -10,7 +10,7 @@ public class DataTable_HomePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//span[text()=New']")
+    @FindBy(xpath = "//*[@id=\"example_wrapper\"]/div[1]/button[1]/span")
     public WebElement newButton;
 
     @FindBy(id = "DTE_Field_first_name")
@@ -37,7 +37,11 @@ public class DataTable_HomePage {
     @FindBy(xpath = "//button[@class='btn']")
     public WebElement createButton;
 
+    @FindBy(xpath = "//input[@type='search']")
+    public WebElement searchBox;
 
+    @FindBy(xpath = "(//tr/td)[2]")
+    public WebElement verifyNameField;
 
 
 }
