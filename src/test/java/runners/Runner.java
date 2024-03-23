@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",// provides path of the features folder
         glue = "stepdefinitions",
         dryRun = true, // dryRun = true generates the missing step definitions, without running the existing step definitions
-        tags = "@scenario_outline"
+        tags = "@scenario_outline_2"
 )
 public class Runner {
 
