@@ -23,8 +23,8 @@ public class BlueRentalStepDefs {
 
     }
 
-    @When("user clikcs on login button")
-    public void user_clikcs_on_login_button() {
+    @When("user clicks on login button")
+    public void user_clicks_on_login_button() {
         blueRentalLoginPage.loginButton.click();
 
     }
