@@ -14,12 +14,9 @@ import org.junit.runner.RunWith;
                 "rerun:target/failedRerun.txt"
         },
         monochrome = true,
-        features = "@target/failedRerun.txt",
+        features = "@target/failedRerun.txt", // provides path of the target folder where failed tests are stored
         glue = "stepdefinitions",
         dryRun = false
 )
 public class FailedTestRunner {
-
-
-
 }
