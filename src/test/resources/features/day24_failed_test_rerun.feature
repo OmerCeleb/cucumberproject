@@ -1,5 +1,6 @@
 @failed
 Feature: failed_test
+  # failing this scenario on purpose
   Scenario: TC_01_admin_login
     Given user navigates to "https://www.bluerentalcars.com/login"
     When user enters admin email and password
