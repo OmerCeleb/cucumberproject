@@ -1,6 +1,7 @@
 package stepdefinitions;
 
 import io.cucumber.java.en.Given;
+import org.junit.Assert;
 import pages.DataTable_HomePage;
 import utilities.BrowserUtils;
 import utilities.ExcelUtils;
@@ -34,8 +35,16 @@ public class ExcelStepDefs {
             BrowserUtils.clickWithTimeOut(dataTableHomePage.newButton, 1);
             BrowserUtils.sendKeysWithTimeout(dataTableHomePage.firstName, eachData.get("first_name"), 1);
             BrowserUtils.sendKeysWithTimeout(dataTableHomePage.lastName, eachData.get("last_name"), 1);
-            BrowserUtils.sendKeysWithTimeout();
+            BrowserUtils.sendKeysWithTimeout(dataTableHomePage.position, eachData.get("position"), 1);
+            BrowserUtils.sendKeysWithTimeout(dataTableHomePage.office, eachData.get("office"), 1);
+            BrowserUtils.sendKeysWithTimeout(dataTableHomePage.extension, eachData.get("extension"), 1);
+            BrowserUtils.sendKeysWithTimeout(dataTableHomePage.startDate, eachData.get("start_date"), 1);
+            BrowserUtils.sendKeysWithTimeout(dataTableHomePage.salary, eachData.get("salary"), 1);
 
+            BrowserUtils.clickWithTimeOut(dataTableHomePage.createButton, 1);
+
+            BrowserUtils.sendKeysWithTimeout(dataTableHomePage.searchBox, eachData.get("first_name"), 1);
+            Assert.assertTrue(dataTableHomePage.verifyNameField.getText().contains(eachData.get("first_name")));
         }
 
 
