@@ -38,7 +38,7 @@ public class ExcelStepDefs {
 
         // TEST STARTS NOW
 
-        // In order to get the data one by one from dataList, we need to pass it through the loop and change it's data type from
+        // In order to get the data one by one from dataList, we need to pass it through the loop and change its data type from
         // list to map, so we can manipulate it as key:value pair
 
         for (Map<String, String> eachData : dataList) {

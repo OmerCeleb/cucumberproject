@@ -1,3 +1,4 @@
+@google_search
 Feature: google_search
 
   Background: navigating_to_google

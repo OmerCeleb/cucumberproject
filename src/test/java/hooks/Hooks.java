@@ -26,5 +26,11 @@ public class Hooks {
         }
     }
 
+    @After("@teapot")
+    public void tearDownSpecific() {
+        System.out.println("This after method is conditional and will run only with the given tag");
+
+    }
+
 
 }
