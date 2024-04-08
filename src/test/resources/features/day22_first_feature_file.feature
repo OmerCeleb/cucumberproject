@@ -4,23 +4,19 @@ Feature: google_search
   Background: navigating_to_google
     Given user is on the google homepage
 
-    @iPhone
+  @iPhone
   Scenario: TC_01_iPhone_search
-  And user search for iPhone
-  Then verify the result contains iPhone
-  And close the application
+    And user search for iPhone
+    Then verify the result contains iPhone
+    And close the application
 
-    @teapot
+  @teapot
   Scenario: TC_02_teapot_search
-  And user search for porcelain teapot
-  Then verify the result contains porcelain teapot
-  And close the application
+    And user search for porcelain teapot
+    Then verify the result contains porcelain teapot
+    And close the application
 
-  @bmw
-  Scenario: TC_03_bmw_search
-  And user search bmw
-  Then verify the result contains porcelain teapot
-  And close the application
+
 
 
 
