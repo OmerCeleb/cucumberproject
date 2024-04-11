@@ -1,4 +1,4 @@
-@google_search
+@google_search @smoke
 Feature: google_search
 
   Background: navigating_to_google

@@ -1,4 +1,4 @@
-@scenario_outline_2
+@scenario_outline_2 @regression
 Feature: data_tables_feature
 
   Background:

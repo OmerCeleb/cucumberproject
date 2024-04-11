@@ -1,4 +1,4 @@
-@param_feature
+@param_feature @smoke
 Feature:
 
   Scenario: TC_01_iPhone_search
