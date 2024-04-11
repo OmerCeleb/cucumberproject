@@ -11,7 +11,8 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-reports/cucumber.xml",
-                "rerun:target/failedRerun.txt"
+                "rerun:target/failedRerun.txt",
+                "com.avenstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome = true,  // makes the console reports more readable
         features = "./src/test/resources/features",// provides path of the features folder
