@@ -11,3 +11,11 @@
   * (Optional) Check running tests and available capabilities by opening your browser at http://localhost:4444
 
 
+-----------------------------------------------------------
+2. Create a folder called SeleniumServer under project
+
+----------------------------------------------------------
+3. Download all below and move them to SeleniumServer folder. Make sure they are out of zip folders
+    * Selenium Server: https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.17.0
+    * Chrome driver: https://googlechromelabs.github.io/chrome-for-testing/#stable
+    * Firefox driver(gecko): https://github.com/mozilla/geckodriver/releases
