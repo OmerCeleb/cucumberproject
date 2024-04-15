@@ -19,3 +19,22 @@
     * Selenium Server: https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.17.0
     * Chrome driver: https://googlechromelabs.github.io/chrome-for-testing/#stable
     * Firefox driver(gecko): https://github.com/mozilla/geckodriver/releases
+
+----------------------------------------------------------
+4. Start the grid from intellij terminal
+    1- From the terminal navigate to SeleniumServer folder
+
+    * ls => lists all child folders in your project
+    * cd command is used to change directory. We need to come into SeleniumServer folder, so use:
+    * cd SeleniumServer
+
+----------------------------------------------------------
+5. Run tests from Selenium Grid Standalone note
+    java -jar selenium-server-<version>.jar standalone (from the grid document). We need to provide the version we are used
+    java -jar selenium-server-4.17.0.jar standalone
+
+    Then we should see "Started Selenium Grid" message
+
+
+
+
