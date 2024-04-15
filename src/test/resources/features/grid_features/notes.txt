@@ -40,7 +40,20 @@
 
 ----------------------------------------------------------
 6. Create a feature file under grid_feature folder
+    @grid
+    Feature: grid_feature
+      Scenario: TC01_chrome_test
+        Given user navigates to "https://github.com" using "chrome" browser
+        Then verify the title contains "GitHub"
+        And close the remote driver
 
+-----------------------------------------------------------
+7. Create GridRunner class and remove Hooks from there
+
+NOTE: You can run the @grid from normal runner as well to create the step definitions
+
+-----------------------------------------------------------
+8. Create GridStepDefs class in step definitions folder
 
 
 
