@@ -35,6 +35,12 @@
 
     Then we should see "Started Selenium Grid" message
 
+    To stop running the Grid, use control c
+    To start again, use the  java -jar selenium-server-4.17.0.jar standalone again
+
+----------------------------------------------------------
+6. Create a feature file under grid_feature folder
+
 
 
 
