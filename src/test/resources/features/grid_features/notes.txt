@@ -105,6 +105,31 @@ public class GridRunner {
 ---------------------------------------------------------
 9.Complete the code
 
+---------------------------------------------------------
+10. Run your tests from GridRunner. You should be able to open remote driver and run tests remotely on different browsers
+
+NOTE: Grid uses REMOTE WEB DRIVER
+
+------------------------------------------------------
+KEY POINTS:
+        * What is Selenium Grid?
+            - It is one of the components of Selenium => Selenium IDE, RC, WEB DRIVER, GRID
+        * What is it used for?
+            1. cross browser testing (chrome, firefox, edge etc.)
+            2. parallel testing
+            3. remote testing
+            4. can also run different operating systems as well WINDOWS, IOS
+        * How did you use it?
+            - I used Grid for cross browser testing in my cucumber framework
+        * How did you run test cases using Grid?
+            - I run test cases in Selenium Server using standalone mode
+            - I changed directory using cd SeleniumServer command on terminal and run standalone command which initiated remote hub
+            NOTE: There are 3 options in Grid: 1. standalone, 2. Hub and Node 3. Distributed Mode
+        * What is HUB?
+            - Hub is the central server which manages the nodes. We can only have ONE Hub.
+        * What is Node?
+            - Node is a virtual machine. We can have multiple nodes.
+
 
 
 
