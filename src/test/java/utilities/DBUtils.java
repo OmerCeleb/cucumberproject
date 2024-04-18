@@ -76,7 +76,7 @@ public class DBUtils {
         }
         return statement;
     }
-    //Use this to get the ResutSet object
+    //Use this to get the ResultSet object
     public static ResultSet getResultset() {
         try {
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
@@ -159,7 +159,7 @@ public class DBUtils {
     }
     /**
      * @return returns query result in a list of maps where the list represents
-     *         collection of rows and a map represents represent a single row with
+     *         collection of rows and a map represents a single row with
      *         key being the column name
      */
     public static List<Map<String, Object>> getQueryResultMap(String query) {
