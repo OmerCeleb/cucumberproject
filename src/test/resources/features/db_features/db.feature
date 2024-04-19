@@ -1,3 +1,8 @@
 Feature: jdbc_feature
-  Scenario:
+
+  @user_login
+  Scenario: TC01_read_user_login
+    Given user connects to application database
+    And close the database
+
     

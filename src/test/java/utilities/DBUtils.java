@@ -25,6 +25,7 @@ public class DBUtils {
         String password="Techpro_@126";
         try {
             connection = DriverManager.getConnection(url, username, password);
+            System.out.println("Connection successfully");
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
