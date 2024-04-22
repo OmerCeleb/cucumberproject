@@ -6,7 +6,7 @@
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -17,16 +17,16 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="27eaff66-96de-4815-8dcd-c81a796ad2a3">
-      <console name="B197" type="STANDARD" schema="" session="Main"><![CDATA[SELECT * FROM jhi_user;]]></console>
+      <console name="B197" type="STANDARD" schema="" session="Main"><![CDATA[SELECT * FROM jhi_user;
+SELECT login FROM jhi_user;
+SELECT first_name FROM jhi_user;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="27eaff66-96de-4815-8dcd-c81a796ad2a3" object-ref="consoles/B197" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="27eaff66-96de-4815-8dcd-c81a796ad2a3" />
@@ -84,7 +84,7 @@
           <session-management value="true" />
           <ddl-file-binding value="true" />
           <database-logging value="true" />
-          <connect-automatically value="true" />
+          <connect-automatically value="false" />
           <restore-workspace value="true" />
           <restore-workspace-deep value="false" />
           <environment-type value="default" />
