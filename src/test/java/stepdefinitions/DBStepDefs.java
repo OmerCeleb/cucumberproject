@@ -3,9 +3,11 @@ package stepdefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import utilities.DBUtils;
 
 import java.sql.SQLException;
+import java.util.List;
 
 
 public class DBStepDefs {
@@ -70,6 +72,11 @@ public class DBStepDefs {
 
     @Then("verify table {string} and column {string} contains {string}")
     public void verify_table_and_column_contains(String tableName, String columnName, String data) {
+
+    List<Object> allColumnData =  DBUtils.getColumnData("SELECT "+columnName +" FROM" + tableName , "login");
+        System.out.println("allColumnData = " + allColumnData);
+
+        Assert.assertTrue(allColumnData.contains(data));
 
 
     }
