@@ -1,13 +1,12 @@
 package stepdefinitions;
 
-import com.mongodb.DB;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import utilities.DBUtils;
 
 import java.sql.SQLException;
-import java.util.List;
+
 
 public class DBStepDefs {
 
@@ -59,9 +58,12 @@ public class DBStepDefs {
         int rowNum = 8;
         while (DBUtils.getResultset().next()) {
             Object currentRowData = DBUtils.getResultset().getObject(columnName);
-            System.out.println(currentRowData);
+            System.out.println(rowNum + " : " +currentRowData);
             rowNum++;
         }
+
+        System.out.println("There are " + rowNum + " data in the" + columnName + " column");
+
 
 
     }
