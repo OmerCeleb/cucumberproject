@@ -24,3 +24,19 @@ Feature: jdbc_feature
     And read all column "account_status_type" data
     Then verify table "tp_account" and column "account_status_type" contains data "SUESPENDED"
 #    And close the connection
+
+
+#    Verify if account_type contains following types: CHECKING, CREDIT CARD, SAVING, INVESTING
+
+  @account_type
+  Scenario Outline: TC04_read_account_type
+    Given user connects to application database
+    And user gets the column "*" from the table "tp_account"
+    And read all column "account_status_type" data
+    Then verify table "<table_name>" and column "<column_name>" contains data "<data_name>"
+    Examples:
+      | table_name | | column_name  | | data_name |
+      | tp_account | | account_type | | CHECKING |
+      | tp_account | | account_type | | CREDIT_CARD |
+      | tp_account | | account_type | | SAVING |
+      | tp_account | | account_type | | INVESTING |

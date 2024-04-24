@@ -22,7 +22,10 @@ SELECT login FROM jhi_user;
 SELECT first_name FROM jhi_user;
 
 
-SELECT * FROM tp_customer;]]></console>
+SELECT * FROM tp_account;
+SELECT account_type FROM tp_account;
+
+SELECT * FROM tp_employee;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
