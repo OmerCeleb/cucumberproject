@@ -1,3 +1,4 @@
+@jdbc
 Feature: jdbc_feature
 
   @user_login
@@ -40,3 +41,18 @@ Feature: jdbc_feature
       | tp_account | | account_type | | CREDIT_CARD |
       | tp_account | | account_type | | SAVING |
       | tp_account | | account_type | | INVESTING |
+
+
+
+  @customer_city_info
+  Scenario Outline: TC05_customer_city_info
+    Given user connects to application database
+    And user gets the column "*" from the table "tp_customer"
+#    And read all column "account_status_type" data
+    Then verify table "<table_name>" and column "<column_name>" contains data "<data_name>"
+    Examples:
+      | table_name | | column_name  | | data_name |
+      | tp_customer | | city | | NJ |
+      | tp_customer | | city | | Fairfax |
+      | tp_customer | | city | | izmir |
+      | tp_customer | | city | | NewCity |

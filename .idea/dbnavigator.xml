@@ -25,7 +25,8 @@ SELECT first_name FROM jhi_user;
 SELECT * FROM tp_account;
 SELECT account_type FROM tp_account;
 
-SELECT * FROM tp_employee;]]></console>
+SELECT * FROM tp_customer;
+SELECT city FROM tp_customer;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -36,6 +37,9 @@ SELECT * FROM tp_employee;]]></console>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="27eaff66-96de-4815-8dcd-c81a796ad2a3" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="27eaff66-96de-4815-8dcd-c81a796ad2a3" dataset="public.tp_customer" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
