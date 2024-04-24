@@ -19,7 +19,10 @@
     <connection id="27eaff66-96de-4815-8dcd-c81a796ad2a3">
       <console name="B197" type="STANDARD" schema="" session="Main"><![CDATA[SELECT * FROM jhi_user;
 SELECT login FROM jhi_user;
-SELECT first_name FROM jhi_user;]]></console>
+SELECT first_name FROM jhi_user;
+
+
+SELECT * FROM tp_customer;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
